@@ -20,7 +20,7 @@ RUN curl --fail -o pgvectors.deb -sSL https://github.com/tensorchord/pgvecto.rs/
 RUN rpm2cpio /tmp/*.rpm | cpio -idmv
 
 ARG CRUNCHYDATA_VERSION
-FROM registry.developers.crunchydata.com/crunchydata/crunchy-postgres:${CRUNCHYDATA_VERSION}
+FROM registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis:${CRUNCHYDATA_VERSION}
 
 ARG PG_MAJOR
 
