@@ -28,7 +28,7 @@ jobs:
       matrix:
         versions:
           # renovate: datasource=docker depName=registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis
-          - "ubi8-17.2-3.4-2"
+          - "ubi9-17.5-3.5-2520"
           # renovate: datasource=docker depName=registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis
           - "ubi8-15.5-3.3-0"
 
